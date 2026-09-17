@@ -178,26 +178,45 @@ body {
     border-left: 4px solid var(--accent-color);
 }
 
-/* Contact */
-.contact {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+/* Contact Info Styles */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
 }
 
-.contact h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    background-color: var(--secondary-bg);
+    padding: 15px 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.contact p {
-    margin-bottom: 30px;
-    color: #8892b0;
+.contact-item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(100, 255, 218, 0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #8892b0;
-    font-size: 14px;
+.contact-item i {
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+.contact-item a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    word-break: break-all;
+}
+
+.contact-item a:hover {
+    color: var(--accent-color);
 }
