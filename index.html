@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Yosry Fouad | Portfolio</title>
+    <!-- ربط ملف الـ CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- مكتبة الأيقونات FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -16,18 +18,19 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header id="about" class="hero">
         <div class="hero-content">
             <p class="greeting">Hi, my name is</p>
             <h1>Mohamed Yosry Fouad.</h1>
             <h2>I build secure web applications.</h2>
-            <p class="bio">I'm a Junior Software Developer and Cybersecurity Analyst specializing in building dynamic websites and securing networks. I enjoy solving CTF challenges and analyzing vulnerabilities.</p>
+            <p class="bio">I'm a Junior Software Developer and Cybersecurity Analyst. I specialize in backend development, network infrastructure, and penetration testing, bridging the gap between functional software and robust security.</p>
             <a href="#contact" class="btn">Get In Touch</a>
         </div>
     </header>
@@ -37,39 +40,65 @@
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container">
             <div class="skill-box">
-                <h3>Web Development</h3>
-                <p>PHP, MySQL, HTML, CSS, JavaScript, C++</p>
+                <h3>Development & Architecture</h3>
+                <p>PHP, MySQL, C/C++, JavaScript, UML Diagrams (Use Case, Class, Sequence), PlantUML, Visual Paradigm</p>
             </div>
             <div class="skill-box">
                 <h3>Cybersecurity</h3>
-                <p>Nmap, Metasploit, Burp Suite, Feroxbuster, OpenVPN</p>
+                <p>Nmap, Metasploit, Burp Suite, Netcat, Feroxbuster, John the Ripper, OpenVPN</p>
             </div>
             <div class="skill-box">
-                <h3>Systems & Networks</h3>
-                <p>Kali Linux, Ubuntu (WSL), VLANs, SMB, RDP</p>
+                <h3>Systems & Environments</h3>
+                <p>Kali Linux, Ubuntu (WSL), XAMPP, TryHackMe, Hack The Box, picoCTF, HackerOne</p>
             </div>
         </div>
     </section>
 
-    <!-- Projects & CTFs Section -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2 class="section-title">Projects & CTFs</h2>
+        <h2 class="section-title">Projects & Achievements</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <h3>Boutique Hotel Management</h3>
-                <p>A dynamic web application built with PHP, HTML, CSS, and MySQL for managing hotel reservations and operations.</p>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>TryHackMe & Hack The Box</h3>
-                <p>Successfully compromised multiple machines focusing on web exploitation and network enumeration.</p>
-                <a href="#" class="project-link">View Write-ups</a>
-            </div>
-            <div class="project-card">
-                <h3>Scheduling Algorithms</h3>
-                <p>Implemented Shortest Remaining Time First (SRTF) logic in JavaScript and recursive dominator algorithms in C++.</p>
+                <p>A dynamic web application built with PHP, HTML, CSS, and MySQL running on local server environments to manage hotel operations efficiently.</p>
                 <a href="#" class="project-link">View Code</a>
             </div>
+            <div class="project-card">
+                <h3>Algorithm Implementations</h3>
+                <p>Developed recursive array dominator detection algorithms in C/C++ and implemented Shortest Remaining Time First (SRTF) CPU scheduling logic in JavaScript.</p>
+                <a href="#" class="project-link">View Code</a>
+            </div>
+            <div class="project-card">
+                <h3>CTF & Machine Compromise</h3>
+                <p>Successfully compromised multiple machines focusing on web exploitation, security analysis, and network enumeration across various platforms.</p>
+                <a href="#" class="project-link">View Profiles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">What I Do</h2>
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <i class="fas fa-laptop-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Building dynamic and responsive web applications from scratch. I handle frontend design and backend database integration using PHP, MySQL, HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <h3>Cybersecurity & Pentesting</h3>
+                <p>Identifying vulnerabilities and securing systems. I conduct penetration testing and solve CTF challenges using tools like Burp Suite, Metasploit, Nmap, and Feroxbuster.</p>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-network-wired service-icon"></i>
+                <h3>Network Infrastructure</h3>
+                <p>Designing secure network architectures, implementing VLANs, Inter-VLAN routing, and analyzing essential protocols like SMB, NFS, and RDP for safe data transmission.</p>
+            </div>
+
         </div>
     </section>
 
@@ -77,7 +106,7 @@
     <section id="certifications" class="section">
         <h2 class="section-title">Certifications</h2>
         <ul class="cert-list">
-            <li><strong>Digital Egypt Pioneers Initiative (DEPI)</strong> - Cybersecurity Track</li>
+            <li><strong>Digital Egypt Pioneers Initiative (DEPI)</strong> - Cybersecurity & Vulnerability Assessment</li>
             <li><strong>Oracle AI Foundations Associate</strong></li>
             <li><strong>Certified LLM Security Professional</strong></li>
         </ul>
@@ -89,22 +118,19 @@
         <p>If you have a question, a freelance opportunity, or just want to connect, feel free to reach out to me directly!</p>
         
         <div class="contact-info">
-            <!-- Email -->
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
-                <a href="mailto:your-email@example.com">mohamedyosry319@gmail.com</a>
+                <a href="mailto:your-email@example.com">your-email@example.com</a>
             </div>
             
-            <!-- Phone -->
             <div class="contact-item">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:+201xxxxxxxxx">+20 1145514472</a>
+                <a href="tel:+201xxxxxxxxx">+20 1xx xxx xxxx</a>
             </div>
             
-            <!-- LinkedIn -->
             <div class="contact-item">
                 <i class="fab fa-linkedin"></i>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/mohamed-yosry-fouad</a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
             </div>
         </div>
     </section>
@@ -113,6 +139,7 @@
         <p>Designed & Built by Mohamed Yosry Fouad &copy; 2026</p>
     </footer>
 
+ 
     <script src="script.js"></script>
 </body>
 </html>
